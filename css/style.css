@@ -69,6 +69,16 @@
 }
 
 @font-face {
+  font-family: "HelveticaNeueCyr-Light";
+  src:
+    url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Light.woff") format("woff");
+  /* font-weight: 700; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "HelveticaNeue";
   src:
     url("../fonts/HelveticaNeue.woff2") format("woff2"),
@@ -394,12 +404,89 @@ select {
 .about-us {
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 31px 15px;
   max-width: 1032px;
   display: flex;
   /* justify-content: space-between; */
-  align-items: center; 
+  /* align-items: flex-start;  */
 }
+
+.about-us__main {
+  width: 316px;
+  margin-right: 16px;
+}
+
+.about-us__main h2 {
+  color: #565656;
+  font-family: "HelveticaNeueCyr-Roman", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.about-us__title {
+  color: #185690;
+  display: block;
+  font-family: "Appetite", "Arial", sans-serif;
+  font-size: 58px;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+.about-us__main p {
+  color: #565656;
+  font-family: "HelveticaNeueCyr-Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.about-us__description {
+  padding-top: 23px;
+  width: 298px;
+  color: #565656;
+  font-family: "HelveticaNeueCyr-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 41px;
+}
+
+.about-us__description p {
+  margin: 0;
+}
+
+.about-us__blockquote {
+  width: 338px;
+  box-sizing: border-box;
+  padding: 18px 25px 22px 23px;
+  background-color: #185690;
+  color: white;
+  font-family: "HelveticaNeueCyr-Light", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  margin-right: -5px;
+  margin-top: -87px;
+  align-self: flex-start;
+}
+
+.about-us__blockquote span {
+  font-family: "HelveticaNeueCyr-Medium", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.about-us__blockquote p {
+  margin: 0;
+}
+
+/* .about-us__blockquote p:nth-of-type(2) {
+  line-height: 32px;
+} */
+
+/* .about-us__blockquote p:nth-of-type(2) span {
+  line-height: 42px;
+} */
 /* 
 .page-header {
   color: #48494d;
