@@ -15,11 +15,11 @@
     <header class="header">
         <div class="header__wrap">
             <div class="header__top">
-                <a class="logo">
-                    <img src="img/logo-header.svg" width="207" height="63" alt="Логотип рекламного агентства «Три кита»" width="102" height="52">
+                <a class="header__logo logo">
+                    <img src="img/logo-header.svg" alt="Логотип рекламного агентства «Три кита»" width="123" height="38">
                 </a>
                 <ul class="header__menu">
-                    <li class="header__menu-item">
+                    <li class="header__menu-item header__menu-item--active">
                         <a href="#" class="header__menu-link">Главная</a>
                     </li>
                     <li class="header__menu-item">
@@ -49,12 +49,12 @@
                         </a>
                     </li>
                 </ul>
-                <button type="button">Обратный звонок</button>
-                <a href="tel:+74832664560">+7(4832)<span>66-45-60</span></a>
+                <button type="button" class="header__button">Обратный звонок</button>
+                <a class="header__phone" href="tel:+74832664560">+7 (4832)<span>66-45-60</span></a>
             </div>
             <nav class="header__bottom nav">
                 <ul class="nav__list">
-                    <li class="nav__item">
+                    <li class="nav__item nav__item--adv">
                         <a href="#" class="nav__link">Изготовление рекламы</a>
                         <ul class="nav__sub-item">
                             <li>
@@ -114,12 +114,17 @@
 
     <main class="main">
         <section class="main-screen">
-            <h1>
-                <span>Рекламное агентство</span>
-                <span>3 кита</span>
-            </h1>
-            <p>Решаем задачи правильно!</p>
+            <div class="main-screen__wrapper">
+                <h1>
+                    <p class="main-screen__logo">
+                        <img src="img/main-screen__logo.png" width="382" height="104" alt="«Три кита»">
+                    </p>
+                    <span class="main-screen__title-main">pекламное агентство</span>
+                </h1>
+                <p>Решаем задачи правильно!</p>
+            </div>
         </section>
+        
         <section class="about-us">
             <div class="">
                 <h2>Об агентстве <span>3 кита</span></h2>
