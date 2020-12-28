@@ -1,0 +1,167 @@
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-style: normal;
+  background-color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  word-wrap: normal;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header__menu,
+.header__socials,
+.nav__list,
+.nav__sub-item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header {
+  background-color: #454442;
+}
+
+.header__top {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+  max-width: 1032px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+}
+
+.header__socials {
+  display: flex;
+}
+
+.header__bottom {
+  background-color: #e8f0f7;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+  max-width: 1032px;
+}
+
+.nav__sub-item {
+  display: none;
+}
+
+/* 
+.page-header {
+  color: #48494d;
+}
+
+.menu__cats,
+.menu__main,
+.menu__user,
+.page-footer__sections ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-nav {
+  margin: 0;
+  list-style-type: none;
+  padding: 0 0 0 20px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tabs__list {
+  margin: 0;
+  list-style-type: none;
+  padding: 10px 0 25px;
+}
+
+.categories__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 -15px;
+}
+
+.wares__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 -15px;
+}
+
+.top-filters__offers ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.left-filter__form ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #ffffff;
+}
+
+.left-filters__wrapper .wares__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 0 43px 10px;
+}
+
+.catalog__pagination-list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 auto;
+} */
