@@ -142,7 +142,9 @@ select {
 .header__menu,
 .header__socials,
 .nav__list,
-.nav__sub-item {
+.nav__sub-item,
+.services__list,
+.services__overlay-container {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -404,11 +406,9 @@ select {
 .about-us {
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 31px 15px;
+  padding: 31px 15px 23px;
   max-width: 1032px;
   display: flex;
-  /* justify-content: space-between; */
-  /* align-items: flex-start;  */
 }
 
 .about-us__main {
@@ -479,6 +479,293 @@ select {
 .about-us__blockquote p {
   margin: 0;
 }
+
+/* search */
+
+.search {
+  background-color: #e5e5e5;
+}
+
+.search__input {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 32px 15px 51px;
+  max-width: 1032px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search__input label {
+  color: #565656;
+  width: 346px;
+  font-family: "HelveticaNeueCyr-Roman", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.search__input span {
+  font-family: "HelveticaNeueCyr-Bold", "Arial", sans-serif;
+}
+
+.search__input input {
+  width: 497px;
+  margin-top: 9px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #565656;
+}
+
+.search__button {
+  font-family: "HelveticaNeueCyr-Medium", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #565656;
+  color: white;
+  padding: 11px 26px;
+  border: none;
+}
+
+.services {
+  margin: -56px auto 0;
+  box-sizing: border-box;
+  padding: 31px 15px;
+  max-width: 1200px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services__item {
+  position: relative;
+  display: flex;
+  width: 375px;
+  min-height: 262px;
+  background-color: #454442;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 375px 287px;
+  margin-bottom: 25px;
+  padding: 100px 73px 0;
+  box-sizing: border-box;
+}
+
+.services__list h3 {
+  position: relative;
+  /* margin: auto; */
+  text-align: center;
+  color: white;
+  font-family: "HelveticaNeueCyr-Bold", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 27px;
+  text-shadow: 0 17px 28px rgba(0,0,0,0.9);
+  ;
+}
+
+.services__item h3::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+.services__item--ads h3::before {
+  background-image: url("../img/ads.svg");
+  background-size: 50px 50px;
+  top: -61px;
+  width: 50px;
+  height: 50px;
+}
+
+.services__item--facade h3::before {
+  background-image: url("../img/facade1.svg");
+  background-size: 59px 59px;
+  top: -69px;
+  width: 59px;
+  height: 59px;
+}
+
+.services__item--print h3::before {
+  background-image: url("../img/print.svg");
+  background-size: 61px 51px;
+  top: -64px;
+  width: 61px;
+  height: 51px;
+}
+
+.services__item--polygraphy h3::before {
+  background-image: url("../img/polygraphy.png");
+  background-size: 49px 59px;
+  top: -69px;
+  width: 49px;
+  height: 59px;
+}
+
+.services__item--boards h3::before {
+  background-image: url("../img/boards.svg");
+  background-size: 57px 50px;
+  top: -57px;
+  width: 57px;
+  height: 50px;
+}
+
+.services__item--pointers h3::before {
+  background-image: url("../img/pointers.svg");
+  background-size: 39px 61px;
+  top: -67px;
+  width: 39px;
+  height: 61px;
+}
+
+.services__item--souvenirs h3::before {
+  background-image: url("../img/souvenirs.svg");
+  background-size: 66px 50px;
+  top: -64px;
+  width: 66px;
+  height: 50px;
+}
+
+.services__item--stamps h3::before {
+  background-image: url("../img/stamps.svg");
+  background-size: 46px 47px;
+  top: -63px;
+  width: 46px;
+  height: 47px;
+}
+
+.services__item--pos h3::before {
+  background-image: url("../img/pos.svg");
+  background-size: 50px 77px;
+  top: -91px;
+  width: 50px;
+  height: 77px;
+}
+
+.services__item--ads {
+  padding-top: 119px;
+  padding-left: 87px;
+  background-image: url("../img/ads.jpg");
+}
+
+.services__item--facade {
+  padding-top: 119px;
+  padding-left: 65px;
+  background-image: url("../img/facade.jpg");
+}
+
+.services__item--print {
+  padding-top: 119px;
+  padding-left: 65px;
+  background-image: url("../img/print.jpg");
+}
+.services__item--polygraphy {
+  background-image: url("../img/polygraphy.jpg");
+}
+
+.services__item--boards {
+  padding-left: 82px;
+  background-image: url("../img/boards.jpg");
+}
+
+.services__item--pointers {
+  padding-left: 74px;
+  background-image: url("../img/pointers.jpg");
+}
+.services__item--souvenirs {
+  padding-top: 108px;
+  background-image: url("../img/souvenirs.jpg");
+}
+
+.services__item--stamps {
+  padding-top: 103px;
+  padding-left: 87px;
+  padding-right: 0;
+  background-image: url("../img/stamps.jpg");
+}
+
+.services__item--pos {
+  padding-top: 103px;
+  padding-left: 160px;
+  background-image: url("../img/pos.jpg");
+}
+
+.services__item--print .services__overlay {
+  display: none;
+  padding: 15px 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e8f0f7;
+}
+
+.services__overlay-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 157px;
+  justify-content: flex-end;
+}
+
+.services__overlay h4 {
+  margin: 0;
+  width: 290px;
+  box-sizing: border-box;
+  position: relative;
+  color: #185690;
+  font-family: "HelveticaNeueCyr-Bold", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  padding-left: 68px;
+  margin-bottom: 20px;
+}
+
+.services__overlay h4::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 44px;
+  background-image: url("../img/print-blue.svg");
+  background-repeat: no-repeat;
+}
+
+.services__item--print:hover .services__overlay,
+.services__item--print:focus .services__overlay {
+  display: block;
+}
+
+.services__overlay-container a {
+  position: relative;
+  width: 153px;
+  display: block;
+  font-family: "HelveticaNeueCyr-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #565656;
+  padding-left: 4px;
+  margin-bottom: 5px;
+  margin-right: 43px;
+}
+
+.services__overlay-container a:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5px;
+  width: 4px;
+  height: 4px;
+  background-color: #185690;
+}
+
 
 /* .about-us__blockquote p:nth-of-type(2) {
   line-height: 32px;
