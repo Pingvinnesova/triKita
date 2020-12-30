@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 </head>
 
 <body class="no-js">
@@ -296,14 +298,44 @@
 
         <section class="customers">
             <h2>Нам <span>доверяют</span></h2>
-            <ul class="customers__list">
-                <li>
-                    <img src="" alt="">
-                </li>
-            </ul>
+            <div class="customers__wrapper">
+                <ul class="customers__list">
+                    <li>
+                        <img src="img/baon.png" alt="Логотип «baon»" width="189" height="40">
+                    </li>
+                    <li>
+                        <img src="img/kia.png" alt="Логотип «kia»" width="131" height="65">
+                    </li>
+                    <li>
+                        <img src="img/government.jpg" alt="Логотип «Правительство Брянской области»" width="213" height="72">
+                    </li>
+                    <li>
+                        <img src="img/fix.png" alt="Логотип «Fix Price»" width="212" height="82">
+                    </li>
+                    <li>
+                        <img src="img/pochaho.png" alt="Логотип «Pochaho»" width="201" height="59">
+                    </li>
+                    <li>
+                        <img src="img/magnit.png" alt="Логотип «Магнит»" width="210" height="117">
+                    </li>
+                    <li>
+                        <img src="img/bilajn.jpg" alt="Логотип «Билайн»" width="211" height="64">
+                    </li>
+                    <li>
+                        <img src="img/binvest.jpg" alt="Логотип «Бинвест»" width="89" height="93">
+                    </li>
+                </ul>
+                <div class="customers__switches">
+                    <button class="customers__button customers__button--prev" type="button">
+                        <span class="visually-hidden">Предыдущий логотип</span>
+                    </button><button class="customers__button customers__button--next" type="button">
+                        <span class="visually-hidden">Следующий логотип</span>
+                    </button>
+                </div>
+            </div>
         </section>
 
-        <section class="map">
+        <section class="map" id="map">
             <h2 class="visually-hidden">Мы на карте</h2>
         </section>
 
@@ -311,41 +343,43 @@
 
     <footer class="footer">
         <div class="footer__contacts">
-            <a href="#" class="footer__logo">
-                <img src="" alt="">
-            </a>
-            <div class="footer__container">
-                <div>
-                    <p>Тел.: <a href="tel:+74832664560">+7 (4832) 66-45-60</a></p>
-                    <p>Анатолий <a href="tel:+79102930512">+7 (910)293-05-12 </a></p>
-                    <p>Дмитрий <a href="tel:+79155304361">+7 (915) 530-43-61 </a></p>
-                    <p>E-mail: <a href="mailto:solo0512@ya.ru">solo0512@ya.ru </a></p>
-                    <p><a href="mailto:br3kita@ya.ru">br3kita@ya.ru</a></p>
-                </div>
-                <div>
-                    <ul class="footer__socials">
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link" title="Vkontakte">
-                                <img src="img/vk.svg" width="30" height="30" alt="vkontakte">
-                                <span class="visually-hidden">Мы во Vkontakte</span>
-                            </a>
-                        </li>
-                        <li class="header__social-item">
-                            <a href="#" class="footer__social-link" title="Instagram">
-                                <img src="img/insta.svg" width="30" height="30" alt="instagram">
-                                <span class="visually-hidden">Мы в Instagram</span>
-                            </a>
-                        </li>
-                        <li class="header__social-item">
-                            <a href="#" class="footer__social-link" title="Facebook">
-                                <img src="img/fb.svg" width="30" height="30" alt="facebook">
-                                <span class="visually-hidden">Мы во Facebook</span>
-                            </a>
-                        </li>
-                    </ul>
-                    Брянск, Грибоедова19
-                    Режим работы: Пн-Пт: 8:30-17:30 
-                    Выходные: Сб, Вс 
+            <div class="footer__contacts-wrapper">
+                <a href="#" class="footer__logo">
+                    <img src="" alt="">
+                </a>
+                <div class="footer__container">
+                    <div>
+                        <p>Тел.: <a href="tel:+74832664560">+7 (4832) 66-45-60</a></p>
+                        <p>Анатолий <a href="tel:+79102930512">+7 (910)293-05-12 </a></p>
+                        <p>Дмитрий <a href="tel:+79155304361">+7 (915) 530-43-61 </a></p>
+                        <p>E-mail: <a href="mailto:solo0512@ya.ru">solo0512@ya.ru </a></p>
+                        <p><a href="mailto:br3kita@ya.ru">br3kita@ya.ru</a></p>
+                    </div>
+                    <div>
+                        <ul class="footer__socials">
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link" title="Vkontakte">
+                                    <img src="img/vk.svg" width="30" height="30" alt="vkontakte">
+                                    <span class="visually-hidden">Мы во Vkontakte</span>
+                                </a>
+                            </li>
+                            <li class="header__social-item">
+                                <a href="#" class="footer__social-link" title="Instagram">
+                                    <img src="img/insta.svg" width="30" height="30" alt="instagram">
+                                    <span class="visually-hidden">Мы в Instagram</span>
+                                </a>
+                            </li>
+                            <li class="header__social-item">
+                                <a href="#" class="footer__social-link" title="Facebook">
+                                    <img src="img/fb.svg" width="30" height="30" alt="facebook">
+                                    <span class="visually-hidden">Мы во Facebook</span>
+                                </a>
+                            </li>
+                        </ul>
+                        Брянск, Грибоедова19
+                        Режим работы: Пн-Пт: 8:30-17:30 
+                        Выходные: Сб, Вс 
+                    </div>
                 </div>
             </div>
         </div>
@@ -371,6 +405,37 @@
             </div>
         </div>
     </footer>
-</body>
+
+<script type="text/javascript">
+        // Как только будет загружен API и готов DOM, выполняем инициализацию
+        ymaps.ready(init);
+ 
+        function init () {
+            // Создание экземпляра карты и его привязка к контейнеру с
+            // заданным id ("map")
+            var myMap = new ymaps.Map('map', {
+                    // При инициализации карты, обязательно нужно указать
+                    // ее центр и коэффициент масштабирования
+                    center: [53.24143, 34.35368], // Нижний Новгород
+                    zoom: 16
+                });
+
+            var myPlacemark = new ymaps.Placemark(
+				// Координаты метки
+				[53.24143, 34.35368] , {
+                    // Свойства
+                    // Текст метки
+                    hintContent: 'Рекламное агентство «Три кита»'
+                }, {
+                    iconImageHref: 'img/map.png', // картинка иконки
+                    iconImageSize: [47, 47], // размеры картинки
+                    iconImageOffset: [-1, -1] // смещение картинки
+                    });     
+ 
+ 
+				// Добавление метки на карту
+				myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
 
 </html>

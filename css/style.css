@@ -146,7 +146,8 @@ select {
 .services__list,
 .services__overlay-container,
 .advantages__list,
-.process__list {
+.process__list,
+.customers__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1047,8 +1048,109 @@ select {
   font-family: "HelveticaNeueCyr-Medium", "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
-
 }
+
+/* customers */
+
+.customers {
+  padding: 40px 0;
+}
+
+.customers h2 {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 31px 15px 23px;
+  max-width: 1032px;
+  text-align: left;
+  font-family: "HelveticaNeueCyr-Roman", "Arial", sans-serif;
+  font-size: 34px;
+  line-height: 56px;
+  color: #565656;
+  font-weight: 300;
+}
+
+.customers span {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Appetite", "Arial", sans-serif;
+  font-size: 56px;
+  line-height: 56px;
+  color: #185690;
+}
+
+.customers__list {
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.customers__wrapper {
+  position: relative;
+}
+
+.customers__button {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  width: 10px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/blue-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 10px 17px;
+}
+
+.customers__button--prev {
+  left: 0;
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.customers__button--next {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/* map */
+
+.map {
+  height: 353px;
+  width: 100%;
+}
+
+/* footer */
+
+.footer {
+  margin-top: -53px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer__contacts {
+  position: relative;
+  background-color: #e7f0f9;
+  width: 90%;
+  z-index: 300;
+}
+
+.footer__contacts-wrapper {
+  width: 444px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.footer__nav {
+  background-color: #707070;
+  width: 110%;
+  margin-top: 53px;
+}
+
 
 /* .about-us__blockquote p:nth-of-type(2) {
   line-height: 32px;
