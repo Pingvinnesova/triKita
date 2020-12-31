@@ -1,6 +1,35 @@
 "use strict";
 
 window.addEventListener('DOMContentLoaded', () => {
+
+    document.body.className += " js-loading";
+        window.addEventListener("load", showPage, false);
+        function showPage() {
+            document.body.className = document.body.className.replace("js-loading","");
+        }
+
+    //map
+
+    ymaps.ready(init);
+ 
+    function init () {
+        var myMap = new ymaps.Map('map', {
+            center: [53.24143, 34.35368], // Нижний Новгород
+            zoom: 16
+        });
+
+        var myPlacemark = new ymaps.Placemark(
+            [53.24143, 34.35368] , {
+                hintContent: 'Рекламное агентство «Три кита»'
+            }, {
+                iconImageHref: 'img/map.png', // картинка иконки
+                iconImageSize: [47, 47], // размеры картинки
+                iconImageOffset: [-1, -1] // смещение картинки
+                });     
+        myMap.geoObjects.add(myPlacemark);
+    }
+    // search
+
     document.querySelector('#search-input').oninput = function () {
         let val = this.value.trim();
         let searchItems = document.querySelectorAll('.services__item h3');
@@ -30,13 +59,12 @@ window.addEventListener('DOMContentLoaded', () => {
     // show-on-scroll
 
     let scroll = window.requestAnimationFrame ||
-        // IE Fallback
         function(callback){ window.setTimeout(callback, 1000/60)};
         let elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 
         function loop() {
 
-        elementsToShow.forEach(function (element) {
+    elementsToShow.forEach(function (element) {
         if (isElementInViewport(element)) {
             element.classList.add('is-visible');
         } else {
@@ -47,10 +75,6 @@ window.addEventListener('DOMContentLoaded', () => {
     scroll(loop);
 
     function isElementInViewport(el) {
-        // special bonus for those using jQuery
-        // if (typeof jQuery === "function" && el instanceof jQuery) {
-        //   el = el[0];
-        // }
         var rect = el.getBoundingClientRect();
         return (
           (rect.top <= 0
@@ -63,23 +87,22 @@ window.addEventListener('DOMContentLoaded', () => {
             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
         );
       }
-}
-
-// Call the loop for the first time
-loop();
-
-var mySwiper = new Swiper('.customers__wrapper', {
-    // Optional parameters
-    direction: 'horizontal',
-    slidesPerView: 8,
-    slidesPerGroup: 8,
-    spaceBetween: 10,
-    // loop: true,
-  
-    // Navigation arrows
-    navigation: {
-        nextEl: '.customers__button--next',
-        prevEl: '.customers__button--prev',
     }
-});
+
+    loop();
+
+    var mySwiper = new Swiper('.customers__wrapper', {
+        // Optional parameters
+        direction: 'horizontal',
+        slidesPerView: 8,
+        slidesPerGroup: 8,
+        spaceBetween: 10,
+        // loop: true,
+    
+        // Navigation arrows
+        navigation: {
+            nextEl: '.customers__button--next',
+            prevEl: '.customers__button--prev',
+        }
+    });
 });

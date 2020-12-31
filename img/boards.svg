@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 57 50" style="enable-background:new 0 0 57 50;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
-	.st1{fill:#FFFFFF;}
-</style>
-<g>
-	<rect x="5.45" y="2.23" class="st0" width="46.27" height="34.54"/>
-	<rect x="11.28" y="7.22" class="st1" width="34.62" height="24.55"/>
-	<rect x="3.95" y="26.24" class="st1" width="2.93" height="20.03"/>
-	<polygon class="st1" points="0.91,49.77 0.85,47.42 10.41,41.9 10.41,44.29 	"/>
-	<polygon class="st1" points="56.09,49.77 56.15,47.42 46.59,41.9 46.59,44.29 	"/>
-	<rect x="50.25" y="26.24" class="st1" width="2.93" height="20.03"/>
-</g>
-</svg>
+<svg id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 50" style="enable-background:new 0 0 57 50"><style>.st0{fill:none;stroke:#fff;stroke-width:3;stroke-miterlimit:10}.st1{fill:#fff}</style><g><path class="st0" d="M5.45 2.23h46.27v34.54H5.45z"/><path class="st1" d="M11.28 7.22H45.9v24.55H11.28z"/><path class="st1" d="M3.95 26.24h2.93v20.03H3.95z"/><path class="st1" d="M.91 49.77.85 47.42 10.41 41.9V44.29z"/><path class="st1" d="M56.09 49.77 56.15 47.42 46.59 41.9V44.29z"/><path class="st1" d="M50.25 26.24h2.93v20.03H50.25z"/></g></svg>

@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
 
-    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+    
 </head>
 
-<body class="no-js">
+<body>
     <header class="header">
         <div class="header__wrap">
             <div class="header__top">
@@ -449,49 +449,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        // Prepare the body tag by adding a "js-paused" class
-        document.body.className += " js-loading";
-  
-        // Listen for when everything has loaded
-        window.addEventListener("load", showPage, false);
-  
-        function showPage() {
-          // Remove the "js-paused" class
-          document.body.className = document.body.className.replace("js-loading","");
-        }
-      </script>
-<script>
-        // Как только будет загружен API и готов DOM, выполняем инициализацию
-        ymaps.ready(init);
- 
-        function init () {
-            // Создание экземпляра карты и его привязка к контейнеру с
-            // заданным id ("map")
-            var myMap = new ymaps.Map('map', {
-                    // При инициализации карты, обязательно нужно указать
-                    // ее центр и коэффициент масштабирования
-                    center: [53.24143, 34.35368], // Нижний Новгород
-                    zoom: 16
-                });
-
-            var myPlacemark = new ymaps.Placemark(
-				// Координаты метки
-				[53.24143, 34.35368] , {
-                    // Свойства
-                    // Текст метки
-                    hintContent: 'Рекламное агентство «Три кита»'
-                }, {
-                    iconImageHref: 'img/map.png', // картинка иконки
-                    iconImageSize: [47, 47], // размеры картинки
-                    iconImageOffset: [-1, -1] // смещение картинки
-                    });     
- 
- 
-				// Добавление метки на карту
-				myMap.geoObjects.add(myPlacemark);
-        }
-    </script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
