@@ -637,10 +637,6 @@ mark {
   transform: scale(1.03);
 }
 
-/* .services__item:hover {
-  background-size: 110% 110%;
-} */
-
 .services__list h3 {
   position: relative;
   /* margin: auto; */
@@ -1193,7 +1189,12 @@ mark {
 /* customers */
 
 .customers {
+  width: 100%;
   padding: 26px 21px 48px;
+}
+
+.customers__container {
+  position: relative;
 }
 
 .customers h2 {
@@ -1219,22 +1220,35 @@ mark {
 }
 
 .customers__list {
-  width: 100%;
-  padding: 0 30px;
+  padding: 0 15px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
-  background-color: white;
 }
 
-.customers__wrapper {
-  position: relative;
+.swiper-slide img {
+  vertical-align: middle;
 }
 
 .customers__button {
   position: absolute;
   top: 50%;
-  /* transform: translateY(-50%); */
   width: 10px;
   height: 17px;
   border: none;
@@ -1242,6 +1256,16 @@ mark {
   background-image: url("../img/blue-arrow.png");
   background-repeat: no-repeat;
   background-size: 10px 17px;
+  z-index: 1000;
+}
+
+.customers__button--prev.swiper-button-disabled {
+  background-image: url("../img/grey-arrow.png");
+  transform: translateY(-50%) rotate(0);
+}
+
+.customers__button--next.swiper-button-disabled {
+  background-image: url("../img/grey-arrow-g.png");
 }
 
 .customers__button--prev {
@@ -1250,10 +1274,18 @@ mark {
 }
 
 .customers__button--next {
-  right: 0;
+  right: 5px;
   transform: translateY(-50%);
 }
 
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100px;
+}
 /* map */
 
 .map {

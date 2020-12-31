@@ -8,6 +8,7 @@
     <title>Рекламное агентство «Три кита». Главная страница</title>
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
 
@@ -298,40 +299,66 @@
         </section>
 
         <section class="customers">
-            <h2>Нам <span>доверяют</span></h2>
-            <div class="customers__wrapper">
-                <ul class="customers__list">
-                    <li>
-                        <img src="img/baon.png" alt="Логотип «baon»" width="189" height="40">
-                    </li>
-                    <li>
-                        <img src="img/kia.png" alt="Логотип «kia»" width="131" height="65">
-                    </li>
-                    <li>
-                        <img src="img/government.jpg" alt="Логотип «Правительство Брянской области»" width="213" height="72">
-                    </li>
-                    <li>
-                        <img src="img/fix.png" alt="Логотип «Fix Price»" width="212" height="82">
-                    </li>
-                    <li>
-                        <img src="img/pochaho.png" alt="Логотип «Pochaho»" width="201" height="59">
-                    </li>
-                    <li>
-                        <img src="img/magnit.png" alt="Логотип «Магнит»" width="210" height="117">
-                    </li>
-                    <li>
-                        <img src="img/bilajn.jpg" alt="Логотип «Билайн»" width="211" height="64">
-                    </li>
-                    <li>
-                        <img src="img/binvest.jpg" alt="Логотип «Бинвест»" width="89" height="93">
-                    </li>
-                </ul>
-                <div class="customers__switches">
-                    <button class="customers__button customers__button--prev" type="button">
-                        <span class="visually-hidden">Предыдущий логотип</span>
-                    </button><button class="customers__button customers__button--next" type="button">
-                        <span class="visually-hidden">Следующий логотип</span>
-                    </button>
+            <div class="customers__container">
+                <h2>Нам <span>доверяют</span></h2>
+                <div class="customers__wrapper swiper-container">
+                    <div class="customers__list swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/baon.png" alt="Логотип «baon»" width="189" height="40">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/kia.png" alt="Логотип «kia»" width="131" height="65">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/government.jpg" alt="Логотип «Правительство Брянской области»" width="213" height="72">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fix.png" alt="Логотип «Fix Price»" width="212" height="82">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/pochaho.png" alt="Логотип «Pochaho»" width="201" height="59">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/magnit.png" alt="Логотип «Магнит»" width="210" height="117">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/bilajn.jpg" alt="Логотип «Билайн»" width="211" height="64">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/binvest.jpg" alt="Логотип «Бинвест»" width="89" height="93">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/baon.png" alt="Логотип «baon»" width="189" height="40">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/kia.png" alt="Логотип «kia»" width="131" height="65">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/government.jpg" alt="Логотип «Правительство Брянской области»" width="213" height="72">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fix.png" alt="Логотип «Fix Price»" width="212" height="82">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/pochaho.png" alt="Логотип «Pochaho»" width="201" height="59">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/magnit.png" alt="Логотип «Магнит»" width="210" height="117">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/bilajn.jpg" alt="Логотип «Билайн»" width="211" height="64">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/binvest.jpg" alt="Логотип «Бинвест»" width="89" height="93">
+                        </div>
+                    </div>
+                    <div class="customers__switches">
+                        <button class="customers__button customers__button--prev" type="button">
+                            <span class="visually-hidden">Предыдущий логотип</span>
+                        </button><button class="customers__button customers__button--next" type="button">
+                            <span class="visually-hidden">Следующий логотип</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -465,6 +492,7 @@
 				myMap.geoObjects.add(myPlacemark);
         }
     </script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
 </html>

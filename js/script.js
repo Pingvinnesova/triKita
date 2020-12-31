@@ -68,4 +68,18 @@ window.addEventListener('DOMContentLoaded', () => {
 // Call the loop for the first time
 loop();
 
+var mySwiper = new Swiper('.customers__wrapper', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 8,
+    slidesPerGroup: 8,
+    spaceBetween: 10,
+    // loop: true,
+  
+    // Navigation arrows
+    navigation: {
+        nextEl: '.customers__button--next',
+        prevEl: '.customers__button--prev',
+    }
+});
 });
