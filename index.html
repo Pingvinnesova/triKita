@@ -9,8 +9,9 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
 
-    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
 </head>
 
 <body class="no-js">
@@ -118,12 +119,12 @@
         <section class="main-screen">
             <div class="main-screen__wrapper">
                 <h1>
-                    <p class="main-screen__logo">
+                    <span class="main-screen__logo animate-pop-in">
                         <img src="img/main-screen__logo.png" width="382" height="104" alt="«Три кита»">
-                    </p>
-                    <span class="main-screen__title-main">pекламное агентство</span>
+                    </span>
+                    <span class="main-screen__title-main animate-pop-in">pекламное агентство</span>
                 </h1>
-                <p>Решаем задачи правильно!</p>
+                <p><span class="main-screen__slogan animate-pop-in">Решаем задачи правильно!</span></p>
             </div>
         </section>
 
@@ -143,7 +144,7 @@
                     благодарностями в адрес нашего коллектива.
                 </p>
             </div>
-            <blockquote class="about-us__blockquote">
+            <blockquote class="about-us__blockquote show-on-scroll">
                 <p>Мы <span>вдохновляемся,</span> когда сложно.</p>
                 <p><span>Заводимся,</span> когда 
                 видно новое.</p>
@@ -227,13 +228,13 @@
             </ul>
         </section>
 
-        <section class="advantages">
+        <section class="advantages show-on-scroll">
             <div class="advantages__container">
                 <h2>Наши <span>преи муще ства</span></h2>
                 <p>Мы всегда четко планируем все этапы производства, что позволяет выполнять работы в точно намеченный срок.</p> 
                 <p>Накопленный опыт позволяет нам быть лидерами, и одними из лучших в сфере.</p>
             </div>
-            <ul class="advantages__list">
+            <ul class="advantages__list show-on-scroll">
                 <li class="advantages__item advantages__item--quality">
                     <h3>Качество</h3>
                     <p>Многолетний опыт работы с крупными и сложными заказами позволяет нам с уверенностью гарантировать высочайшее качество предоставляемых нами услуг.</p>
@@ -262,7 +263,7 @@
         </section>
 
         <section class="process">
-            <div class="process__background"></div>
+            <div class="process__background show-on-scroll"></div>
             <div class="process__wrapper">
                 <h2>Процесс <span>заказа</span></h2>
                 <ol class="process__list">
@@ -376,7 +377,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <p>Брянск, Грибоедова19</p>
+                        <p>Брянск, Грибоедова19
                         Режим работы: <br />Пн-Пт: 8:30-17:30 
                         Выходные: Сб, Вс</p>
                     </div>
@@ -385,38 +386,55 @@
         </div>
         <div class="footer__nav">
             <ul class="footer__nav-list">
-                <div>
-                    <li><a href="#">Световые вывески</a></li>
-                    <li><a href="#">Объёмные буквы</a></li>
-                    <li><a href="#">Бегущие строки</a></li>
-                    <li><a href="#">Несветовые вывески</a></li>
-                </div>
-                <div>
-                    <li><a href="#">Световые вывески</a></li>
-                    <li><a href="#">Объёмные буквы</a></li>
-                    <li><a href="#">Бегущие строки</a></li>
-                    <li><a href="#">Несветовые вывески</a></li>
-                </div>
-                <div>
-                    <li><a href="#">Световые вывески</a></li>
-                    <li><a href="#">Объёмные буквы</a></li>
-                    <li><a href="#">Бегущие строки</a></li>
-                    <li><a href="#">Несветовые вывески</a></li>
-                </div>
+                <li>
+                    <ul class="footer__nav-wrapper">
+                        <li><a href="#">Световые вывески</a></li>
+                        <li><a href="#">Объёмные буквы</a></li>
+                        <li><a href="#">Бегущие строки</a></li>
+                        <li><a href="#">Несветовые вывески</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="footer__nav-wrapper">
+                        <li><a href="#">Световые вывески</a></li>
+                        <li><a href="#">Объёмные буквы</a></li>
+                        <li><a href="#">Бегущие строки</a></li>
+                        <li><a href="#">Несветовые вывески</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="footer__nav-wrapper">
+                        <li><a href="#">Световые вывески</a></li>
+                        <li><a href="#">Объёмные буквы</a></li>
+                        <li><a href="#">Бегущие строки</a></li>
+                        <li><a href="#">Несветовые вывески</a></li>
+                    </ul>
+                </li>
             </ul>
             <div class="footer__info">
                 <p>Все права защищены 2019 © 3 Кита
                     <a>Обработка персональных данных</a>
                 </p>
-                <a class="footer__executor" href="#">
+                <a class="footer__executor" href="https://r-band.ru/">
                     <img src="img/r-band.png" width="210" height="15" alt="R-band">
                     <span class="visually-hidden">Забацано в R-band</span>
                 </a>
             </div>
         </div>
     </footer>
-
-<script type="text/javascript">
+    <script>
+        // Prepare the body tag by adding a "js-paused" class
+        document.body.className += " js-loading";
+  
+        // Listen for when everything has loaded
+        window.addEventListener("load", showPage, false);
+  
+        function showPage() {
+          // Remove the "js-paused" class
+          document.body.className = document.body.className.replace("js-loading","");
+        }
+      </script>
+<script>
         // Как только будет загружен API и готов DOM, выполняем инициализацию
         ymaps.ready(init);
  
@@ -447,5 +465,6 @@
 				myMap.geoObjects.add(myPlacemark);
         }
     </script>
+    <script src="js/script.js"></script>
 
 </html>
