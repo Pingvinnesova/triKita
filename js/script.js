@@ -94,15 +94,37 @@ window.addEventListener('DOMContentLoaded', () => {
     var mySwiper = new Swiper('.customers__wrapper', {
         // Optional parameters
         direction: 'horizontal',
-        slidesPerView: 8,
-        slidesPerGroup: 8,
-        spaceBetween: 10,
+        // slidesPerView: 8,
+        // slidesPerGroup: 8,
+        // spaceBetween: 10,
         // loop: true,
     
         // Navigation arrows
         navigation: {
             nextEl: '.customers__button--next',
             prevEl: '.customers__button--prev',
-        }
+        },
+        breakpoints: {
+            320: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+              spaceBetween: 10
+            },
+            790: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+              spaceBetween: 10
+            },
+            1600: {
+              slidesPerView: 5,
+              slidesPerGroup: 5,
+              spaceBetween: 10
+            },
+            1700: {
+                slidesPerView: 8,
+                slidesPerGroup: 8,
+                spaceBetween: 20
+              },
+          }
     });
 });
